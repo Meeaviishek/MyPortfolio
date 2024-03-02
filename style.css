@@ -285,7 +285,7 @@ span {
 }
 #section1{
  
-  background-image: url(./images/imgg3.jpg);
+  background-image: url("./images/imgg3.JPG");
   background-repeat:no-repeat;
   width: auto;
   background-size: cover;
