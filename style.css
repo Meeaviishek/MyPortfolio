@@ -165,7 +165,7 @@ nav li:first-child{
  display:flex;
  margin-left: 30px;
  margin-top: 50px;
- margin-bottom: 200px;
+ margin-bottom: 150px;
 }
 
 .contact{
@@ -182,13 +182,13 @@ nav li:first-child{
 }
 @media (max-width: 500px) {
    .wrap{
-    font-size: 23px;
+    font-size: 20px;
    }
   .main{
     display:inline-block;
   }
   .name{
-    font-size: 40px;
+    font-size: 25px;
   }
   .contact {
     display:inline-flex;
@@ -209,16 +209,17 @@ nav li:first-child{
  font-size: 15px;
   }
   .txt p{
+    color: #f2f3f4;
     font-size: 16px;
-    margin-top: 20px;
-    margin-right: 80px;
+    margin-top: 10px;
+    margin-right: 20px;
     text-align:justify;
     margin-bottom: 20px;
   }
   .name{
   
   
-    font-size: 28px;
+    font-size: 30px;
     font-family:"poppins" ;
     text-transform: uppercase;
   
@@ -321,7 +322,7 @@ nav li:first-child{
   width: 28px;
 
   margin-top: 20px;
-  margin-bottom: 30px;
+
   height: 28px;
   border-radius: 50%;
 
