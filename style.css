@@ -164,8 +164,8 @@ nav li:first-child{
 .main{
  display:flex;
  margin-left: 30px;
- margin-top: 100px;
- margin-bottom: 100px;
+ margin-top: 50px;
+ margin-bottom: 200px;
 }
 
 .contact{
@@ -180,9 +180,9 @@ nav li:first-child{
   /*box-shadow: 0px 1px 10px 0px rgba(255, 255, 255, 0.578);*/
  
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
    .wrap{
-    font-size: 25px;
+    font-size: 23px;
    }
   .main{
     display:inline-block;
@@ -199,22 +199,17 @@ nav li:first-child{
 
    
   }
-  .contact i{
-    height: 10px;
-    width: 12px;
-    background-color:  #343232;
-    color: #ffffff;
-    margin-right:0px;
     
-    border-radius: 50%;
-    }  
   .txt{
     margin-left: 10px;
     margin-top: 30px;
     width:auto;
   }
+  .main h2{
+ font-size: 15px;
+  }
   .txt p{
-    font-size: 17px;
+    font-size: 16px;
     margin-top: 20px;
     margin-right: 80px;
     text-align:justify;
@@ -223,7 +218,7 @@ nav li:first-child{
   .name{
   
   
-    font-size: 40px;
+    font-size: 28px;
     font-family:"poppins" ;
     text-transform: uppercase;
   
@@ -318,6 +313,19 @@ nav li:first-child{
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
  
+}
+@media (max-width: 500px) {
+  .contact i{
+
+
+  width: 28px;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 28px;
+  border-radius: 50%;
+
+  }
 }
 #section1{
  
