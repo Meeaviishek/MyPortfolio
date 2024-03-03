@@ -155,7 +155,7 @@ nav li:first-child{
   width: 600px;
 }
 .txt p{
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 20px;
  
   margin-bottom: 20px;
@@ -186,6 +186,7 @@ nav li:first-child{
    }
   .main{
     display:inline-block;
+    margin-left: 20px;
   }
   .name{
     font-size: 25px;
@@ -319,11 +320,11 @@ nav li:first-child{
   .contact i{
 
 
-  width: 28px;
+  width: 30px;
 
   margin-top: 20px;
 
-  height: 28px;
+  height: 30px;
   border-radius: 50%;
 
   }
