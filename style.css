@@ -13,7 +13,7 @@ body{
 
 
 
-.nav{
+nav{
   position:sticky;
   display: flex;
 
@@ -22,7 +22,7 @@ body{
   top: 0;
   left: 50%;
   justify-content: space-around;
-  align-items: center;
+  
   z-index: 100;
   background: rgba(19, 19, 20, 0.205);
   backdrop-filter: blur(30px);
@@ -30,11 +30,11 @@ body{
    
 }
 
-.nav ul{
+nav ul{
  list-style-type: none;
  display: flex;
 }
-.nav ul li:not(:last-child){
+nav ul li:not(:last-child){
   margin-right: 1rem;
 }
 .wrap{
@@ -50,7 +50,7 @@ span {
   border-right: .05em solid;
   animation: caret 1s steps(1) infinite;
 }
-.nav ul li a{
+nav ul li a{
   font-size:18px;  
   color: aliceblue;
   padding: 10px 20px;  
@@ -58,20 +58,54 @@ span {
 }
 
 
-.nav ul li a:hover{
-  border-bottom: 1px solid rgb(244, 5, 5);
+nav ul li a:hover{
+
  font-weight: 800;
  color: rgb(244, 0, 0);
  transition: all ease-in-out .3s;
 }
-@media (max-width: 580px) {
-  .nav {
-    overflow: auto;
-  }
+nav li:first-child{
+  margin-left: auto;
 }
 
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height:50vh;
+  width:250px;
+  z-index: 999;
+  background-color: #000000b2;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(27, 26, 26, 0.635);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+  padding-top: 20px;
 
+}
+.sidebar a{
+  width: 100%;
+}
+.menubtn{
+  display: none;
+}
+@media(max-width:800px) {
+  .nav-li{
+    display: none;
 
+  }
+  nav{
+    justify-content: end;
+  }
+  .menubtn{
+    display: block;
+  }
+}
 
 
 
@@ -123,7 +157,7 @@ span {
 .txt p{
   font-size: 18px;
   margin-top: 20px;
-
+ 
   margin-bottom: 20px;
 }
 
@@ -135,7 +169,7 @@ span {
 }
 
 .contact{
-  margin-right: 100px;
+
   position:absolute;
   float: left;
   background-color: #000000;
@@ -146,42 +180,44 @@ span {
   /*box-shadow: 0px 1px 10px 0px rgba(255, 255, 255, 0.578);*/
  
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
    .wrap{
-    font-size: 30px;
+    font-size: 25px;
    }
   .main{
     display:inline-block;
   }
+  .name{
+    font-size: 40px;
+  }
   .contact {
     display:inline-flex;
     margin-top: 30px;
-
+    border: 0;
+    box-shadow:none;
     background-color: #000000;
-    border-radius: 50px;
-    box-shadow: 1px 3px 10px 2px rgba(57, 57, 57, 0.712);
-    border: 1px solid rgb(72, 71, 71);
+
+   
   }
   .contact i{
-   
+    height: 10px;
+    width: 12px;
     background-color:  #343232;
     color: #ffffff;
-
+    margin-right:0px;
     
     border-radius: 50%;
-    text-align: center;
-    
-  
-  }  
+    }  
   .txt{
     margin-left: 10px;
     margin-top: 30px;
     width:auto;
   }
   .txt p{
-    font-size: 16px;
+    font-size: 17px;
     margin-top: 20px;
-    text-align: left;
+    margin-right: 80px;
+    text-align:justify;
     margin-bottom: 20px;
   }
   .name{
@@ -285,7 +321,7 @@ span {
 }
 #section1{
  
-  background-image: url("./images/imgg3.jpg");
+  background-image: url(./images/imgg3.jpg);
   background-repeat:no-repeat;
   width: auto;
   background-size: cover;
@@ -324,14 +360,14 @@ section{
 }
 @media screen and (max-width: 600px) {
   .card{
-
+    margin: 20px 20px 20px 20px;
     display: block;
     margin-left: 20px;
   }
 }
 .card img{
-   width: 230px;
-   height: 230px;
+   width: 200px;
+   height: 200px;
    justify-items: center;
    border-radius: 50%; 
   margin-left: 50px;
@@ -356,17 +392,17 @@ section{
 }
 
 .text{
-margin-left: 40px;
-margin-right: 40px;
+margin-left: 50px;
+margin-right: 50px;
 
 }
 @media screen and (max-width: 800px) {
   .text{
     margin-top: 30px;
- 
-    
+    margin-left: 20px;
+margin-right: 20px;
+    }
   }
-}
 
 
 .text p{
@@ -375,6 +411,14 @@ margin-right: 40px;
   font-size:18px;
 
 }
+@media screen and (max-width: 800px) {
+  .text p{
+    font-size: 15px;
+    }
+    .text h1{
+      font-size: 25px;
+     }
+  }
 b{
   color: rgb(5, 123, 250);
 }
@@ -416,10 +460,10 @@ h1{
   border: 2px solid transparent;
   background: linear-gradient(71deg, #000000, #1a171c, #080509);
   padding-top: 10px;
-  width:500px;
+  width:100%;
   background-clip: padding-box;
   border-radius: 45px;
-  padding: 40px;
+  padding: 0px;
   margin-inline: auto;
   height: 200px;
   margin-top: 20px;
@@ -640,6 +684,3 @@ hr{
   }
 
 }
-Run Pen
-
-Resources
