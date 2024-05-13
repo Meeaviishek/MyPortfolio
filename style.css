@@ -6,7 +6,7 @@
 body{
   background-color: #000000;
   /*background-image: url(img13.jpg);*/
-  backdrop-filter: blur(50px);
+ 
   color: white;
   font-family: poppins;
 }
@@ -335,20 +335,26 @@ nav li:first-child{
   background-repeat:no-repeat;
   width: auto;
   background-size: cover;
-  height:auto;
+  height: auto;
   
   text-decoration: none;
   
 }
-
-
 section{
-  padding-top: 50px;
-  padding-bottom: 50px;
+ padding-top: 50px;
+ padding-bottom: 30px;
 }
+
+
+
 #section2{
-  background-color: rgb(19, 19, 20);
-  height: auto;
+  background-image:url(./images/blur7.jpg);
+
+  background-size: cover;
+  background-repeat:no-repeat;
+  
+  /* background-color: rgba(7, 7, 14, 0.913); */
+
   text-decoration: none;
 
   
@@ -356,24 +362,67 @@ section{
 
 
 .card{
-  background-color: rgba(0, 0, 0, 0.694);
-  margin: 50px 50px 50px 50px;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  border: 0.5px solid rgba(126, 122, 122, 0.696);
-  
-  
-  box-shadow: 5px 8px 26px 4px rgba(0, 0, 0, 0.945);
+  background: rgba(255, 254, 254, 0.103);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.84);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5.5px);
+border: 1px solid rgba(252, 250, 250, 0.518);
 
-  border-radius: 50px;
+  margin: 50px 50px 50px 50px;
+  
   height:auto;
 }
-@media screen and (max-width: 600px) {
+
+
+
+.edu{
+  margin-left: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bo-left{
+  margin-top: 20px;
+  border-left: 3px solid #f60808;
+}
+.edu h1{
+  font-size: 30px;
+
+}
+
+.con{
+padding-left: 20px;
+padding-bottom: 20px;
+}
+.ed-con::before{
+  content: '';
+  position: absolute;
+  margin-left: -10px;
+  width: 20px;
+
+  height: 20px;
+  background: #f60808;
+  border-radius: 50%;
+}
+.con .year{
+  font-size: 15px;;
+  color: #f60808;
+}
+@media screen and (max-width: 800px) {
   .card{
     margin: 20px 20px 20px 20px;
     display: block;
     margin-left: 20px;
   }
+  .edu{
+    margin-left: 20px;
+   
+   }
+   .edu h1{
+    font-size: 25px;
+   }
+  
 }
 .card img{
    width: 200px;
@@ -387,7 +436,8 @@ section{
 
 .content{
   display: flex;
-
+  margin-top: 50px;
+  
 }
 @media screen and (max-width: 800px) {
   .content{
@@ -395,6 +445,21 @@ section{
  
     
   }
+}
+
+.subcard{
+  background: rgba(255, 254, 254, 0.361);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.84);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(252, 250, 250, 0.518);
+  padding-top: 15px;
+  width:auto;
+  margin: 30px 30px 30px 30px;
+  
+ height: auto;
+text-align: center;
 }
 
 .text h1{
@@ -411,6 +476,9 @@ margin-right: 50px;
     margin-top: 30px;
     margin-left: 20px;
 margin-right: 20px;
+    }
+    .card img{
+      margin-left: 70px;
     }
   }
 
@@ -435,22 +503,37 @@ b{
 
 
 #section3{
-  background-color: rgb(19, 19, 20);
-  height: auto;
+  background-image:url(./images/blur7.jpg);
+
+  background-size: cover;
+  background-repeat:no-repeat;
+  
+  /* background-color: rgba(7, 7, 14, 0.913); */
+
   text-decoration: none;
 
 }
 #section4{
-  background-color: rgb(19, 19, 20);
-  height: auto;
+  background-image:url(./images/blur7.jpg);
+
+  background-size: cover;
+  background-repeat:no-repeat;
+  
+  /* background-color: rgba(7, 7, 14, 0.913); */
+
   text-decoration: none;
 
 }
 
 
 #section5{
-  background-color: rgb(19, 19, 20);
-  height:auto;
+  background-image:url(./images/blur7.jpg);
+
+  background-size: cover;
+  background-repeat:no-repeat;
+  
+  /* background-color: rgba(7, 7, 14, 0.913); */
+
   text-decoration: none;
 
 }
@@ -467,13 +550,19 @@ h1{
 }
 
 .card1{
-  border: 2px solid transparent;
-  background: linear-gradient(71deg, #000000, #1a171c, #080509);
+  background: rgba(255, 254, 254, 0.151);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(172, 8, 8, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(252, 250, 250, 0.518);
+   
+ 
   padding-top: 10px;
-  width:100%;
-  background-clip: padding-box;
-  border-radius: 45px;
-  padding: 0px;
+  width:83%;
+
+ 
+  padding: 10px;
   margin-inline: auto;
   height: 200px;
   margin-top: 20px;
@@ -483,7 +572,7 @@ h1{
  
   
   
-  box-shadow: 5px 8px 26px 4px rgba(0, 0, 0, 0.945);
+ 
 }
 
 .cont{
