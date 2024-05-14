@@ -348,7 +348,7 @@ section{
 
 
 #section2{
-  background-image:url(./images/blur2.jpg);
+  background-image:url(./images/img1.jpg);
 
   background-size: cover;
   background-repeat:no-repeat;
@@ -424,7 +424,7 @@ padding-bottom: 20px;
    }
   
 }
-.card img{
+.card .my-img{
    width: 200px;
    height: 200px;
    justify-items: center;
@@ -455,6 +455,7 @@ padding-bottom: 20px;
   -webkit-backdrop-filter: blur(1px);
   border: 1px solid rgba(252, 250, 250, 0.518);
   padding-top: 15px;
+  display: flex;
   width:auto;
   margin: 30px 30px 30px 30px;
   
@@ -462,6 +463,38 @@ padding-bottom: 20px;
 text-align: center;
 }
 
+.po-img{
+  width: 260px;
+  height: 140px;
+  border-radius: 16px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+.po-cont{
+  margin-left: 20px;
+  text-align: left;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width:800px) {
+  .subcard{
+    display: block;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .po-cont{
+    margin-left: 15px;
+    text-align: justify;
+  }
+  .po-img{
+    width: 200px;
+    height: 120px;
+    border-radius: 16px;
+    margin-left: 1px;
+    margin-bottom: 5px;
+  }
+  
+}
 .text h1{
  font-size: 30px;
 }
@@ -477,7 +510,7 @@ margin-right: 50px;
     margin-left: 20px;
 margin-right: 20px;
     }
-    .card img{
+    .card .my-img{
       margin-left: 70px;
     }
   }
@@ -503,7 +536,7 @@ b{
 
 
 #section3{
-  background-image:url(./images/img2.jpg);
+  background-image:url(./images/img6.jpg);
 
   background-size: cover;
   background-repeat:no-repeat;
@@ -512,6 +545,44 @@ b{
 
   text-decoration: none;
 
+}
+.sub-card{
+  display:grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+@media screen and (max-width: 991px) {
+  grid-template-columns: 1fr;
+  gap: 0px
+}
+
+}
+
+.s-card{
+  background: rgba(255, 254, 254, 0.361);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.84);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(252, 250, 250, 0.518);
+   
+ 
+  padding-top: 10px;
+  width:83%;
+  margin-bottom: 20px;
+ 
+  padding: 10px;
+  margin-inline: auto;
+  height:auto;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.s-card p{
+  margin-top: 20px;
+  text-align:justify;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 #section4{
   background-image:url(./images/blur7.jpg);
@@ -527,7 +598,7 @@ b{
 
 
 #section5{
-  background-image:url(./images/blur12.jpg);
+  background-image:url(./images/img4.jpg);
 
   background-size: cover;
   background-repeat:no-repeat;
@@ -542,7 +613,16 @@ b{
   width: 60px;
   height: 60px;
   margin-left: 30px;
-  padding-top: 30px;
+  margin-top: 20px;
+  
+}
+@media screen and (max-width:900) {
+  .img1{
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+  
+  }
   
 }
 h1{
@@ -550,21 +630,20 @@ h1{
 }
 
 .card1{
-  background: rgba(255, 254, 254, 0.151);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(172, 8, 8, 0.1);
-  backdrop-filter: blur(5.5px);
-  -webkit-backdrop-filter: blur(5.5px);
-  border: 1px solid rgba(252, 250, 250, 0.518);
-   
- 
+  background: rgba(255, 254, 254, 0.103);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.84);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5.5px);
+border: 1px solid rgba(252, 250, 250, 0.518);
+
   padding-top: 10px;
   width:83%;
 
  
   padding: 10px;
   margin-inline: auto;
-  height: 200px;
+  height: 150px;
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
@@ -581,6 +660,7 @@ h1{
   gap: 32px;
   @media screen and (max-width: 991px) {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
   
 }
