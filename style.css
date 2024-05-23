@@ -340,6 +340,13 @@ nav li:first-child{
   text-decoration: none;
   
 }
+@media (max-width: 800px) {
+  #section1{
+    background-color: #000000;
+
+    
+  }
+}
 section{
  padding-top: 50px;
  padding-bottom: 30px;
